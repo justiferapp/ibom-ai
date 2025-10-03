@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ibom AI - Product Photo Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-primary': '#0A0A0A',
+              'brand-secondary': '#1A1A1A',
+              'brand-accent': '#4F46E5',
+              'brand-accent-hover': '#4338CA',
+              'text-primary': '#F5F5F5',
+              'text-secondary': '#A3A3A3',
+              'border-color': '#262626',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.22.0",
+    "@netlify/functions": "https://aistudiocdn.com/@netlify/functions@^4.2.7"
+  }
+}
+</script>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <script src="https://checkout.flutterwave.com/v3.js"></script>
+</head>
+  <body class="bg-brand-primary text-text-primary">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

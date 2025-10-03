@@ -1,0 +1,9 @@
+{
+  "name": "ibom-ai-product-pro-functions",
+  "version": "1.0.0",
+  "description": "Serverless functions for Ibom AI",
+  "dependencies": {
+    "@google/genai": "^1.22.0",
+    "@netlify/functions": "^2.6.0"
+  }
+}
