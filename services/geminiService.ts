@@ -1,4 +1,4 @@
-import type { Settings, Resolution, AspectRatio } from '../types';
+import type { Settings, Resolution, AspectRatio } from '../types.ts';
 
 const addWatermark = (base64Image: string): Promise<string> => {
     return new Promise((resolve, reject) => {

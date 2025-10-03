@@ -1,15 +1,15 @@
 import React, { useState, useCallback, useEffect, useRef } from 'react';
-import type { GeneratedImage, GeneratedAdCopy, Settings, AdminSettings, GenerationHistoryItem, User } from './types';
-import ImageUpload from './components/ImageUpload';
-import SettingsPanel from './components/SettingsPanel';
-import ResultsDisplay from './components/ResultsDisplay';
-import Modal from './components/Modal';
-import AdminPanel from './components/AdminPanel';
-import UserDashboard from './components/UserDashboard';
-import AuthModal from './components/AuthModal';
-import BuyCreditsModal from './components/BuyCreditsModal';
-import { generateProductAssets, regenerateSingleImage, removeBackgroundImage } from './services/geminiService';
-import { SparklesIcon, InfoIcon, CogIcon, UserIcon } from './components/icons';
+import type { GeneratedImage, GeneratedAdCopy, Settings, AdminSettings, GenerationHistoryItem, User } from './types.ts';
+import ImageUpload from './components/ImageUpload.tsx';
+import SettingsPanel from './components/SettingsPanel.tsx';
+import ResultsDisplay from './components/ResultsDisplay.tsx';
+import Modal from './components/Modal.tsx';
+import AdminPanel from './components/AdminPanel.tsx';
+import UserDashboard from './components/UserDashboard.tsx';
+import AuthModal from './components/AuthModal.tsx';
+import BuyCreditsModal from './components/BuyCreditsModal.tsx';
+import { generateProductAssets, regenerateSingleImage, removeBackgroundImage } from './services/geminiService.ts';
+import { SparklesIcon, InfoIcon, CogIcon, UserIcon } from './components/icons.tsx';
 
 const createThumbnail = (base64Src: string, width = 128, height = 128): Promise<string> => {
     return new Promise((resolve, reject) => {

@@ -1,7 +1,7 @@
 
 import React from 'react';
-import type { GeneratedImage } from '../types';
-import { DownloadIcon, EyeIcon, ShareIcon, EditIcon } from './icons';
+import type { GeneratedImage } from '../types.ts';
+import { DownloadIcon, EyeIcon, ShareIcon, EditIcon } from './icons.tsx';
 
 interface ImageCardProps {
   image: GeneratedImage;

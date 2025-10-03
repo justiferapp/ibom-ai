@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import Modal from './Modal';
-import type { User } from '../types';
+import Modal from './Modal.tsx';
+import type { User } from '../types.ts';
 
 interface AuthModalProps {
   isOpen: boolean;

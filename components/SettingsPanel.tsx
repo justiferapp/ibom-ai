@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Settings, AspectRatio, Resolution } from '../types';
+import type { Settings, AspectRatio, Resolution } from '../types.ts';
 
 interface SettingsPanelProps {
   settings: Settings;

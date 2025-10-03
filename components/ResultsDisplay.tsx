@@ -1,10 +1,10 @@
 
 import React, { useState } from 'react';
-import type { GeneratedImage, GeneratedAdCopy } from '../types';
-import ImageCard from './ImageCard';
-import AdCopyCard from './AdCopyCard';
-import Modal from './Modal';
-import { SparklesIcon } from './icons';
+import type { GeneratedImage, GeneratedAdCopy } from '../types.ts';
+import ImageCard from './ImageCard.tsx';
+import AdCopyCard from './AdCopyCard.tsx';
+import Modal from './Modal.tsx';
+import { SparklesIcon } from './icons.tsx';
 
 interface ResultsDisplayProps {
   images: GeneratedImage[];

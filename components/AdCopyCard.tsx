@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import type { GeneratedAdCopy } from '../types';
-import { CopyIcon, CheckIcon } from './icons';
+import type { GeneratedAdCopy } from '../types.ts';
+import { CopyIcon, CheckIcon } from './icons.tsx';
 
 interface AdCopyCardProps {
   adCopy: GeneratedAdCopy;

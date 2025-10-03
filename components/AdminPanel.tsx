@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
-import type { AdminSettings } from '../types';
-import Modal from './Modal';
+import type { AdminSettings } from '../types.ts';
+import Modal from './Modal.tsx';
 
 interface AdminPanelProps {
   isOpen: boolean;

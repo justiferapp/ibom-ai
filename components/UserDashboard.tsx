@@ -1,8 +1,8 @@
 
 import React from 'react';
-import Modal from './Modal';
-import type { GenerationHistoryItem, User } from '../types';
-import { SparklesIcon } from './icons';
+import Modal from './Modal.tsx';
+import type { GenerationHistoryItem, User } from '../types.ts';
+import { SparklesIcon } from './icons.tsx';
 
 interface UserDashboardProps {
   isOpen: boolean;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Modal from './Modal';
-import type { AdminSettings, User, CreditPackage } from '../types';
+import Modal from './Modal.tsx';
+import type { AdminSettings, User, CreditPackage } from '../types.ts';
 
 // To satisfy TypeScript, as these are loaded from external scripts
 declare const PaystackPop: any;
