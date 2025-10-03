@@ -448,7 +448,7 @@ const App: React.FC = () => {
         </div>
       </main>
       <footer className="text-center py-6 text-text-secondary/50 text-sm">
-        <p onClick={handleFooterClick} className="cursor-pointer select-none">&copy; {new Date().getFullYear()} Ibom AI. A $10M SaaS Product built for you.</p>
+        <p onClick={handleFooterClick} className="cursor-pointer select-none">&copy; {new Date().getFullYear()} Ibom AI. Designed by Justus Edet</p>
       </footer>
 
       <Modal isOpen={isEditModalOpen} onClose={() => setIsEditModalOpen(false)}>
