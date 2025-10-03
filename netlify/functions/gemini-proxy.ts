@@ -1,3 +1,4 @@
+
 import { GoogleGenAI, Modality, Type } from "@google/genai";
 import type { Handler } from "@netlify/functions";
 
@@ -39,7 +40,7 @@ const handler: Handler = async (event) => {
 
       const imagePromises = Array(settings.numberOfImages).fill(0).map(() => 
           ai.models.generateContent({
-              model: 'gemini-2.5-flash-image',
+              model: 'nano-banana',
               contents: { parts: [imagePart, { text: imagePrompt }] },
               config: { responseModalities: [Modality.IMAGE, Modality.TEXT] },
           })
@@ -74,7 +75,7 @@ const handler: Handler = async (event) => {
     } else if (action === 'regenerate') {
         const fullPrompt = `Using this original product photo, generate a new version with this style: "${prompt}". Apply these settings: Resolution: ${settings.resolution}, Aspect Ratio: ${settings.aspectRatio}.`;
         const imageResponse = await ai.models.generateContent({
-            model: 'gemini-2.5-flash-image',
+            model: 'nano-banana',
             contents: { parts: [imagePart, { text: fullPrompt }] },
             config: { responseModalities: [Modality.IMAGE, Modality.TEXT] },
         });
@@ -89,7 +90,7 @@ const handler: Handler = async (event) => {
         const removeBgPrompt = "Remove the background from this image entirely, leaving only the main product. The new background must be transparent. The final output must be a PNG file to preserve transparency.";
         
         const imageResponse = await ai.models.generateContent({
-            model: 'gemini-2.5-flash-image',
+            model: 'nano-banana',
             contents: { parts: [imagePart, { text: removeBgPrompt }] },
             config: { responseModalities: [Modality.IMAGE, Modality.TEXT] }, 
         });
